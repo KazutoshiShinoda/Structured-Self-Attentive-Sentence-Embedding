@@ -1,6 +1,6 @@
 # Structured-Self-Attentive-Sentence-Embedding
 
-Implementation of 'A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING' proposed by Lin et al. at ICLR 2017.
+Implementation of "A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING" proposed by Lin et al. at ICLR 2017.[link](https://arxiv.org/abs/1703.03130)
 
 ## How to use
 
