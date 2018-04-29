@@ -26,4 +26,9 @@ class SelfAttNet(nn.Module):
         A = F.softmax(self.w2(self.tanh(self.w1(H))), dim=2) # (N, L, r)
         A = A.view(N, -1, L) # (N, r, L)
         M = torch.bmm(A, H) # (N, r, hidden_dim*2)
-        return M, A
+        P = torch.sqrt(
+            torch.sum(
+                (torch.bmm(A, A.transpose(1, 2)) - Variable(torch.eye(self.config.r)))**2
+            )
+        )
+        return M, P
