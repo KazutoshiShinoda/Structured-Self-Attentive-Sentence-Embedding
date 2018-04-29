@@ -1,5 +1,7 @@
 # Structured-Self-Attentive-Sentence-Embedding
 
+Implementation of 'A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING' proposed by Lin et al. at ICLR 2017.
+
 ## How to use
 
 ```python:
